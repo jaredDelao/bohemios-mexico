@@ -1,5 +1,4 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 import AboutUs from './components/AboutUs.vue'
 import Home from './components/Home.vue'
 import Services from './components/Services.vue'

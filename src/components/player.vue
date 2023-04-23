@@ -6,7 +6,7 @@ const audioPlay = ref(null)
 
 onMounted(() => {
   const audio = new Audio(
-    `assets/player/${props.song}.mp3`
+    `src/assets/player/${props.song}.mp3`
   );
 
   // console.dir(audio);
