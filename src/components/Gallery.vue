@@ -2,24 +2,56 @@
   <div class="wrapper" id="galeria">
     <p class="title">GALERIA</p>
 
-    <lightgallery :settings="settings">
+    <lightgallery :settings="settings" class="md">
       <a v-for="im in images" :key="im" data-lg-size="1406-1390" class="gallery-item"
         :data-src="'/bohemios-mexico/assets/gallery/'+ im +'.jpeg'"
         >
         <img class="img-responsive" :src="'/bohemios-mexico/assets/gallery/'+ im +'.jpeg'" />
       </a>
     </lightgallery>
+
+    <carousel :items-to-show="1" class="carousel-wrap xs">
+      <slide v-for="im in images" :key="im">
+        <div class="wrapper-slide">
+          <!-- <img src="../assets/gallery/1.jpeg" style="width: 100%"> -->
+          <img :src="'/bohemios-mexico/assets/gallery/'+ im +'.jpeg'" style="width: 100%"  class="img-responsive">
+        </div>
+      </slide>
+      <template #addons>
+        <navigation>
+          <template #prev>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                <path fill="#fff" d="M400 976 0 576l400-400 56 57-343 343 343 343-56 57Z" />
+              </svg>
+            </span>
+          </template>
+          <template #next>
+            <span><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48">
+                <path fill="#fff" d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z" />
+              </svg></span>
+          </template>
+        </navigation>
+      </template>
+    </carousel>
+
   </div>
 </template>
 
 <script>
 import Lightgallery from 'lightgallery/vue';
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+
 // import 'lightgallery/css/lightgallery.css';
 
 export default {
   name: 'Gallery',
   components: {
     Lightgallery,
+    Carousel,
+    Slide,
+    Pagination,
+    Navigation,
   },
   data() {
     return {
@@ -89,5 +121,19 @@ export default {
   .wrapper .title {
     font-size: 4em;
   }
+}
+
+.xs {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .md {
+    display: none;
+  }
+  .xs {
+    display: block;
+  }
+  
 }
 </style>
