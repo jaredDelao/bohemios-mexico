@@ -7,7 +7,7 @@ const getColorBtn = (value) => {
 </script>
 
 <template>
-  <div class="about">
+  <div class="about" id="nosotros">
     <div class="info">
       <div class="title">
         NOSOTROS:

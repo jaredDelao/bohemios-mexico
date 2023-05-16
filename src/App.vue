@@ -6,6 +6,7 @@ import MeetUs from './components/MeetUs.vue'
 import Videos from './components/Videos.vue'
 import Gallery from './components/Gallery.vue'
 import Contact from './components/Contact.vue'
+import Footer from './components/Footer.vue'
 
 </script>
 
@@ -18,6 +19,7 @@ import Contact from './components/Contact.vue'
     <Videos />
     <Gallery />
     <Contact />
+    <Footer />
   </div>
 </template>
 

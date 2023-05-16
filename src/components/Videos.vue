@@ -1,5 +1,5 @@
 <template>
-  <div class="videos">
+  <div class="videos" id="video">
     <span class="title">VIDEOS</span>
     <carousel :items-to-show="1" class="carousel-wrap">
       <slide v-for="video in iframes" :key="video">

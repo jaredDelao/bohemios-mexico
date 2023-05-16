@@ -14,7 +14,7 @@ const onSlideChange = (e) => {
 
 <template>
   <Navbar/>
-  <div class="content">
+  <div class="content" id="inicio">
     <div class="text-content" v-if="textIdx === 0">
       <h4 class="subtitle">LOS MEJORES MÚSICOS <br> DE MÉXICO.</h4>
       <p>Contratación de:</p>

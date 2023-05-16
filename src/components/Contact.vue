@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="contacto">
     <div class="left-column">
       <h2>
         Envíanos un correo
@@ -43,7 +43,8 @@
       <!-- end row -->
       <h2>Aceptamos</h2>
       <div class="payments">
-        <img class="img-acept" width="100%" src="../assets/rss/pago-lg.png">
+        <img class="img-acept md" width="100%" src="../assets/rss/pago-lg.png">
+        <img class="img-acept xs" width="100%" src="../assets/rss/pago-sm.png">
       </div>
     </div>
   </div>
@@ -116,12 +117,24 @@ export default {
     width: 100%;
     text-align: center;
 
+    .xs {
+      display: none;
+      @media screen and (max-width: 1000px) {
+        display: block;
+      }
+    }
+
+    .md {
+      @media screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+
     .img-acept {
       width: 100%;
       max-width: 500px;
       margin: auto;
     }
-
   }
 
 }
@@ -165,6 +178,9 @@ h2 {
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+  }
 
   p {
     margin: 0;
@@ -175,6 +191,9 @@ h2 {
     background-color: #fff8ec;
 
     p {
+      @media screen and (max-width: 550px) {
+        text-align: center;
+      }
       &:first-child {
         font-size: 16px;
         font-weight: 600;
@@ -183,13 +202,19 @@ h2 {
 
     &:first-child {
       border-right: 3px solid var(--secondary);
+      @media screen and (max-width: 551px) {
+        border-right: none;
+        border-bottom: 3px solid var(--secondary);
+      }
     }
 
     &__img {
       display: flex;
       align-items: center;
       padding: 0 10px;
-
+      @media screen and (max-width: 550px) {
+        justify-content: center;
+      }
 
       img {
         width: 30px;

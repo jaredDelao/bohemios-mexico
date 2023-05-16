@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" id="galeria">
     <p class="title">GALERIA</p>
 
     <lightgallery :settings="settings">

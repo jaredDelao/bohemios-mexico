@@ -7,7 +7,7 @@ const getColorBtn = (value) => {
 </script>
 
 <template>
-  <div class="services">
+  <div class="services" id="servicios">
     <img src="../assets/services.jpeg" alt="">
 
     <div class="title">

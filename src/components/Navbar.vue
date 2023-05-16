@@ -17,11 +17,13 @@ const toggleMenu = () => {
       <img src="../assets/close.svg" alt="">
     </div>
     <ul>
-      <li><a href="#">INICIO</a></li>
-      <li><a href="#">NOSOTROS</a></li>
-      <li><a href="#">SERVICIOS</a></li>
-      <li><a href="#">CONÓZCANOS</a></li>
-      <li><a href="#">CONTACTO</a></li>
+      <li><a @click="toggleMenu" href="#inicio">INICIO</a></li>
+      <li><a @click="toggleMenu" href="#nosotros">NOSOTROS</a></li>
+      <li><a @click="toggleMenu" href="#servicios">SERVICIOS</a></li>
+      <li><a @click="toggleMenu" href="#escuchanos">ESCUCHANOS</a></li>
+      <li><a @click="toggleMenu" href="#video">VIDEO</a></li>
+      <li><a @click="toggleMenu" href="#galeria">GALERÍA</a></li>
+      <li><a @click="toggleMenu" href="#contacto">CONTACTO</a></li>
     </ul>
   </div>
   <div class="navbar">
@@ -29,13 +31,14 @@ const toggleMenu = () => {
       <img src="../assets/logo.png" width="100%" alt="bohemios de mexico">
     </div>
     <div class="menu">
-      <p><a href="#">INICIO</a></p>
-      <p><a href="#">NOSOTROS</a></p>
-      <p><a href="#">SERVICIOS</a></p>
-      <p><a href="#">ESCUCHANOS</a></p>
-      <p><a href="#">VIDEO</a></p>
-      <p><a href="#">GALERÍA</a></p>
-      <p><a href="#">CONTACTO</a></p>
+      <p><a href="#inicio">INICIO</a></p>
+      <p><a href="#nosotros">NOSOTROS</a></p>
+      <p><a href="#servicios">SERVICIOS</a></p>
+      <p><a href="#escuchanos">ESCUCHANOS</a></p>
+      <p><a href="#video">VIDEO</a></p>
+      <p><a href="#galeria">GALERÍA</a></p>
+      <p><a href="#contacto">CONTACTO</a></p>
+      <p><a href="#"><img src="../assets/rss/footer/wa.png" width="25px"></a></p>
     </div>
     
     <button type="button" class="btn-menu-responsive" @click="toggleMenu"><img src="../assets/menu.svg"></button>
@@ -52,7 +55,7 @@ const toggleMenu = () => {
   height: 90px;
   display: flex;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
-  background-color: #fffaf5b9;
+  background-color: #fffaf5e1;
   align-items: center;
 }
 

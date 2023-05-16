@@ -3,7 +3,7 @@ import Player from './player.vue'
 </script>
 
 <template>
-  <div class="meetUs">
+  <div class="meetUs" id="escuchanos">
     <div class="title">
       <h4>ESCUCHANOS</h4>
     </div>
