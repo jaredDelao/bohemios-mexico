@@ -4,9 +4,9 @@
 
     <lightgallery :settings="settings">
       <a v-for="im in images" :key="im" data-lg-size="1406-1390" class="gallery-item"
-        :data-src="'/bohemios-mexico/assets/gallery/'+ im +'.jpeg'"
+        :data-src="'../assets/gallery/'+ im +'.jpeg'"
         >
-        <img class="img-responsive" :src="'/bohemios-mexico/assets/gallery/'+ im +'.jpeg'" />
+        <img class="img-responsive" :src="'../assets/gallery/'+ im +'.jpeg'" />
       </a>
     </lightgallery>
   </div>
