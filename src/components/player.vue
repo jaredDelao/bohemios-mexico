@@ -41,7 +41,7 @@ onMounted(() => {
 
   //check audio percentage and update time accordingly
   setInterval(() => {
-    const progressBar = audioPlay.value.querySelector(".progress");
+    const progressBar = audioPlay?.value?.querySelector(".progress");
     progressBar.style.width = audio.currentTime / audio.duration * 100 + "%";
     audioPlay.value.querySelector(".time .current").textContent = getTimeCodeFromNum(
       audio.currentTime

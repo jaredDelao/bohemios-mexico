@@ -26,14 +26,15 @@ const toggleMenu = () => {
   </div>
   <div class="navbar">
     <div class="logo">
-      <!-- <img src="../assets/logo.png" width="100%" alt="bohemios de mexico"> -->
+      <img src="../assets/logo.png" width="100%" alt="bohemios de mexico">
     </div>
-    <p class="text-call">LLAME YA: 55 3477 3037</p>
     <div class="menu">
       <p><a href="#">INICIO</a></p>
       <p><a href="#">NOSOTROS</a></p>
       <p><a href="#">SERVICIOS</a></p>
-      <p><a href="#">CONÓZCANOS</a></p>
+      <p><a href="#">ESCUCHANOS</a></p>
+      <p><a href="#">VIDEO</a></p>
+      <p><a href="#">GALERÍA</a></p>
       <p><a href="#">CONTACTO</a></p>
     </div>
     
@@ -56,16 +57,7 @@ const toggleMenu = () => {
 }
 
 .navbar .logo {
-  height: 200px;
   width: 200px;
-  background: url('../assets/logo.png');
-  background-size: contain;
-  background-position: bottom;
-  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
-  border-radius: 0px 0px 10px 10px;
-  background-color: white;
-  border: none;
-  background-repeat: no-repeat;
 }
 
 .navbar .text-call {
@@ -85,9 +77,6 @@ const toggleMenu = () => {
 .navbar .menu p {
   font-size: 15px;
   padding: 0px 10px;
-}
-
-.navbar .menu p {
   border-right: 3px solid var(--primary);
 }
 
@@ -111,13 +100,16 @@ const toggleMenu = () => {
 
 }
 
-@media screen and (max-width: 1130px) {
-  .navbar .menu {
-    display: none;
+@media screen and (max-width: 920px) {
+  .navbar .menu p {
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width: 800px) {
+  .navbar .menu {
+    display: none;
+  }
   .navbar .btn-menu-responsive {
     display: block;
   }

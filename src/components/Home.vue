@@ -1,21 +1,39 @@
 <script setup>
-import { onMounted, ref, onUnmounted } from 'vue'
+import { ref } from 'vue'
 import { register } from 'swiper/element/bundle';
 import Navbar from './Navbar.vue'
 import 'swiper/element/css/pagination'
 import 'swiper/element/css/autoplay'
 register()
-const spaceBetween = ref(10);
+const textIdx = ref(0);
+
+const onSlideChange = (e) => {
+  textIdx.value = e.detail[0].snapIndex
+}
 </script>
 
 <template>
   <Navbar/>
   <div class="content">
-    <div class="text-content">
-      <h4 class="title">BIENVENIDOS</h4>
-      <h4 class="subtitle">Tríos, Duetos, Cuartetos, Solistas y más...</h4>
-      <p>LA CALIDAD Y EL PRESTIGIO NOS CARACTERIZA</p>
+    <div class="text-content" v-if="textIdx === 0">
+      <h4 class="subtitle">LOS MEJORES MÚSICOS <br> DE MÉXICO.</h4>
+      <p>Contratación de:</p>
+      <p>Tríos, Duetos, Cuartetos, <br> Solístas y mucho más...</p>
     </div>
+
+    <div class="text-content" style="top: 70%" v-if="textIdx === 1">
+      <h4 class="subtitle" style="text-align: right">DISPONIBILIDAD</h4>
+      <p style="text-align: right">Las 24 horas.</p>
+      <p style="text-align: right">7 días de la semana,</p>
+      <p style="text-align: right">Los 365 días del año.</p>
+    </div>
+
+    <div class="text-content" v-if="textIdx === 2">
+      <h4 class="subtitle" style="text-align: center">CALIDAD Y PRESTIGIO</h4>
+      <p style="text-align: center">Nos respalda una tradición</p>
+      <p style="text-align: center">de más de 50 años.</p>
+    </div>
+
     <swiper-container :slides-per-view="1" :autoplay="true" :space-between="spaceBetween" :centered-slides="true"
       :pagination="{
           hideOnClick: true
@@ -53,19 +71,20 @@ const spaceBetween = ref(10);
   width: 90%;
 }
 
-.content .text-content .title {
-  font-size: 6em;
-  font-weight: 500;
-  line-height: 100px;
-}
 .content .text-content .subtitle {
-  font-size: 3em;
-  font-weight: 500;
+  font-size: 3.5em;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1em;
+  margin-bottom: 30px;
 }
 .content .text-content p {
-  margin-top: 10%;
-  font-size: 2.5em;
+  margin-top: 30px;
+  font-size: 2.8em;
   font-weight: 200;
+  text-align: left;
+  margin: 0px;
+  line-height: 1em;
 }
 
 swiper-container {

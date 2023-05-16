@@ -8,8 +8,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lightgallery": "^2.7.1",
     "swiper": "^9.2.4",
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "vue3-carousel": "^0.3.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",

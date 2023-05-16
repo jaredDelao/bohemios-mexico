@@ -5,48 +5,34 @@ import Player from './player.vue'
 <template>
   <div class="meetUs">
     <div class="title">
-      <h4>CONÓZCANOS</h4>
+      <h4>ESCUCHANOS</h4>
     </div>
-    <div class="info">
-      <p>Lo invitamos a escuchar una de nuestras canciones:</p>
-      <br>
-      <div class="video">
-        <p>A primera vista</p>
-        <Player song="primera" name="A primera vista" />
-      </div>
-      <br>
-      <div class="video">
-        <p>Costumbres</p>
-        <Player song="costumbres" name="Costumbres" />
-      </div>
-      <br>
-      <div class="video">
-        <p>No</p>
-        <Player song="no" name="No" />
-      </div>
-    </div>
+
     <div class="info2">
-      <p class="text-visit">Visítenos en nuestras Redes Sociales</p>
+      <p class="text-visit">Da play y deléitate con nuestras interpretaciones.</p>
 
       <div class="rss">
-        <div class="yt">
-          <a href="">
-            <img src="../assets/rss/yt.svg" alt="">
-            <p>YouTube</p>
-          </a>
-        </div>
-        <div class="fb">
-          <a href="">
-            <img src="../assets/rss/fb.svg" alt="">
-            <p>Facebook</p>
-          </a>
-        </div>
+        <img src="../assets/play.png">
       </div>
-      <p class="service-text">EL MEJOR SERVICIO, PARA EL MEJOR EVENTO.</p>
-    </div>
-
   </div>
-</template>
+  <div class="info">
+    <div class="video">
+      <p>A primera vista</p>
+      <Player song="primera" name="A primera vista" />
+    </div>
+    <br>
+    <div class="video">
+      <p>Costumbres</p>
+      <Player song="costumbres" name="Costumbres" />
+    </div>
+    <br>
+    <div class="video">
+      <p>No</p>
+      <Player song="no" name="No" />
+    </div>
+  </div>
+
+</div></template>
 
 <style scoped lang="scss">
 .meetUs {
@@ -76,7 +62,7 @@ import Player from './player.vue'
   padding: 0 15px;
 }
 
-.video > p {
+.video>p {
   margin-bottom: 5px;
   font-size: 18px;
 }
@@ -89,30 +75,24 @@ import Player from './player.vue'
 
 .info2 {
   .text-visit {
+    margin: auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 27px;
+    max-width: 300px;
+    font-weight: 300;
   }
+
   .rss {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 20px;
     align-items: baseline;
+
     img {
-      opacity: 0.8;
-      &:hover {
-        opacity: 1;
-      }
+      margin-top: 20px;
+      width: 200px;
     }
-    a {
-      text-decoration: none;
-      color: white;
-    }
-  }
-  .service-text {
-    font-size: 18px;
-    font-weight: 300;
-    text-align: center;
   }
 }
 
@@ -128,25 +108,28 @@ import Player from './player.vue'
   .meetUs .title {
     font-size: 2.5em;
   }
+
   .meetUs {
     .info {
       grid-column-start: 1;
       grid-column-end: 1;
     }
+
     .info2 {
       grid-column-start: 1;
       grid-column-end: 1;
     }
   }
-  
+
   .info2 {
     margin-top: 30px;
+
     .rss {
       justify-content: center;
-      & > div {
+
+      &>div {
         margin: 0 20px;
       }
     }
   }
-}
-</style>
+}</style>
