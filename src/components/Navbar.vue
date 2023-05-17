@@ -38,9 +38,11 @@ const toggleMenu = () => {
       <p><a href="#video">VIDEO</a></p>
       <p><a href="#galeria">GALERÍA</a></p>
       <p><a href="#contacto">CONTACTO</a></p>
-      <p><a href="#"><img src="../assets/rss/footer/wa.png" width="25px"></a></p>
+      <p><a
+          href="https://api.whatsapp.com/send/?phone=5534773037&text=¡Te damos la bienvenida! Somos bohemios de México, un grupo de músicos destacados con gran experiencia y con un gran repertorio en el ámbito del bolero, el romanticismo, la balada y muchos otros géneros. Nos gustaría ser parte de tu evento. Cuéntanos ¿En qué podemos apoyarte?"
+          target="_blank"><img src="../assets/rss/footer/wa.png" width="25px"></a></p>
     </div>
-    
+
     <button type="button" class="btn-menu-responsive" @click="toggleMenu"><img src="../assets/menu.svg"></button>
   </div>
 </template>
@@ -113,15 +115,18 @@ const toggleMenu = () => {
   .navbar .menu {
     display: none;
   }
+
   .navbar .btn-menu-responsive {
     display: block;
   }
 }
+
 @media screen and (max-width: 600px) {
   .navbar .text-call {
     font-size: 18px;
   }
 }
+
 @media screen and (max-width: 525px) {
   .navbar .text-call {
     display: none;
@@ -159,6 +164,7 @@ const toggleMenu = () => {
   text-decoration: none;
   font-size: 25px;
 }
+
 .menu-responsive ul a:hover {
   text-decoration: underline;
 }
@@ -170,5 +176,4 @@ const toggleMenu = () => {
   width: 50px;
   height: 50px;
   display: none;
-}
-</style>
+}</style>

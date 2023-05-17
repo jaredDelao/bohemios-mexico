@@ -30,8 +30,8 @@ const onSlideChange = (e) => {
 
     <div class="text-content" v-if="textIdx === 2">
       <h4 class="subtitle" style="text-align: center">CALIDAD Y PRESTIGIO</h4>
-      <p style="text-align: center">Nos respalda una tradición</p>
-      <p style="text-align: center">de más de 50 años.</p>
+      <p style="text-align: center">Nos respaldan más de 10 años de experiencia</p>
+      <p style="text-align: center">en eventos a nivel nacional e internacional.</p>
     </div>
 
     <swiper-container :slides-per-view="1" :autoplay="true" :space-between="spaceBetween" :centered-slides="true"

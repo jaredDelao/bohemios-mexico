@@ -4,9 +4,9 @@
 
     <lightgallery :settings="settings" class="md">
       <a v-for="im in images" :key="im" data-lg-size="1406-1390" class="gallery-item"
-        :data-src="'/bohemios-mexico/assets/gallery/'+ im +'.jpeg'"
+        :data-src="'/assets/gallery/'+ im +'.jpeg'"
         >
-        <img class="img-responsive" :src="'/bohemios-mexico/assets/gallery/'+ im +'.jpeg'" />
+        <img class="img-responsive" :src="'/assets/gallery/'+ im +'.jpeg'" />
       </a>
     </lightgallery>
 
@@ -14,7 +14,7 @@
       <slide v-for="im in images" :key="im">
         <div class="wrapper-slide">
           <!-- <img src="../assets/gallery/1.jpeg" style="width: 100%"> -->
-          <img :src="'/bohemios-mexico/assets/gallery/'+ im +'.jpeg'" style="width: 100%"  class="img-responsive">
+          <img :src="'/assets/gallery/'+ im +'.jpeg'" style="width: 100%"  class="img-responsive">
         </div>
       </slide>
       <template #addons>
@@ -127,7 +127,7 @@ export default {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .md {
     display: none;
   }

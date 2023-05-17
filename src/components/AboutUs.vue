@@ -13,18 +13,14 @@ const getColorBtn = (value) => {
         NOSOTROS:
       </div>
       <div class="subtitle">
-        <p>Somos un grupo de músicos destacados con
-          gran experiencia y un gran repertorio, en el
-          ámbito del bolero, el romanticismo, la
-          balada y otros géneros.</p>
+        <p>Somos un grupo de músicos destacados con gran experiencia y un gran repertorio, en el ámbito del bolero, el
+          romanticismo, la balada y muchos otros géneros.</p>
 
-        <p>Nos respaldan más de 50 años, heredando el
-          talento y convicción de nuestros abuelos.</p>
+        <p>Tenemos más de 10 años de experiencia en eventos y toda una carrera profesional nacional e internacional;
+          trayendo la esencia contemporánea con arreglos modernos y actuales.</p>
 
         <p>
-          Buscamos engalanar tu evento, brindando
-          una excelente interpretación musical y una
-          experiencia inigualable.
+          Buscamos destacar tu evento, brindando una excelente interpretación musical y una experiencia inigualable.
         </p>
       </div>
     </div>

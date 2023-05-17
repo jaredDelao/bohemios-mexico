@@ -6,10 +6,11 @@
       </div>
       <div class="right-column">
         <div class="rss">
-          <img src="../assets/rss/footer/fb.svg" alt="Facebook">
-          <img src="../assets/rss/footer/ig.svg" alt="Instagram">
-          <img src="../assets/rss/footer/tiktok.svg" alt="Tiktok">
-          <img src="../assets/rss/footer/yt.svg" alt="Youtube">
+          <a href="https://www.facebook.com/bohemiosdemexicooficial?mibextid=ZbWKwL" target="_blank"><img
+              src="../assets/rss/footer/fb.svg" alt="Facebook"></a>
+          <a target="_blank" href="https://instagram.com/bohemios_de_mexico?igshid=MzRlODBiNWFlZA=="><img src="../assets/rss/footer/ig.svg" alt="Instagram"></a>
+          <a target="_blank" href="https://www.tiktok.com/@bohemios_de_mexico?_t=8cMxsky4k5t&_r=1"><img src="../assets/rss/footer/tiktok.svg" alt="Tiktok"></a>
+          <a target="_blank" href="https://youtube.com/@bohemiosdemexico"><img src="../assets/rss/footer/yt.svg" alt="Youtube"></a>
         </div>
       </div>
     </div>
@@ -64,6 +65,7 @@ export default {
     display: flex;
     flex-direction: row;
     align-items: center;
+
     @media screen and (max-width: 820px) {
       flex-direction: column;
     }
@@ -85,6 +87,7 @@ export default {
     .right-column {
       width: 50%;
       text-align: center;
+
       @media screen and (max-width: 820px) {
         width: 100%;
       }
@@ -92,6 +95,7 @@ export default {
       .rss {
         display: flex;
         flex-direction: row;
+
         @media screen and (max-width: 820px) {
           justify-content: center;
           margin-top: 30px;
@@ -100,6 +104,7 @@ export default {
         img {
           width: 70px;
           margin: 0 10px;
+
           @media screen and (max-width: 500px) {
             width: 50px;
           }
@@ -107,5 +112,4 @@ export default {
       }
     }
   }
-}
-</style>
+}</style>

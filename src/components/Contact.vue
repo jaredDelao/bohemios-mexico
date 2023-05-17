@@ -4,7 +4,7 @@
       <h2>
         Envíanos un correo
       </h2>
-      <form action="enviar.php" method="POST">
+      <form action="/enviar.php" method="POST">
         <div class="form-group">
           <label for="nombre">Nombre:</label>
           <input type="text" id="nombre" name="nombre" required>
